@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Document</title>
+
+    <style>
+        body,i,h3{
+            background-color: black;
+            font-family: fantasy;
+            color: white;
+        }
+        /* reservation */
+        img{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            margin: 0;
+            padding: 0;
+        }
+        #icon:hover{
+            border-bottom:1px solid green;
+            width: 100px;
+            margin-left: 40%;
+            padding: 10px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+
+    <!-- header -->
+
+    {% include 'navi/navibar.html' %}
+
+    <div class="container-fluid" style="padding: 0;">
+        <div class="row" style="padding: 0;">
+            <div class="col-4" style="padding: 0;">
+                <img src="{% static 'images/img18.png' %}" alt="no image">
+            </div>
+            <div class="col-4"style="padding: 0;" >
+                <div class="row" style="height: 50%; padding: 0;">
+                    <div>
+                        <img src="{% static 'images/img19.png' %}" alt=""style="padding: 0;">
+                    </div>
+                </div>
+                <div class="row d-flex flex-column justify-content-center align-item-center text-center " style="height: 50%;margin: 0;">
+                    <i id="icon" class="fa-solid fa-book-open" style="font-size: 25px;"></i><br>
+                    <h3> Our Food Recipes </h3>
+                    <a href="https://www.teacoffeecup.com/recipe/different-types-of-coffee-explained-espresso-drink-recipes/"  style=" color: white;text-decoration: none;"> View More </a>
+                </div>
+            </div>
+            <div class="col-4"style="padding: 0;">
+                <div class="row d-flex flex-column justify-content-center align-item-center text-center" style="height: 50% ; margin: 0;">
+                    <i id="icon"  class="fa-solid fa-bell-concierge" style="font-size: 30px;"></i><br>
+                    <h3> Cooking is our passion </h3>
+                    <a href="https://www.teacoffeecup.com/recipe/different-types-of-coffee-explained-espresso-drink-recipes/" style="text-decoration: none; color: white;" > View More </a>
+                </div>
+                <div class="row" style="height: 50%;padding: 0;">
+                   <img src="{% static 'images/img10.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <!-- footer -->
+
+    {% include 'navi/footer.html' %}
+
+
+
+</body>
+</html>

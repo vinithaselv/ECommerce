@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+            font-family: fantasy;
+            color: white;
+            
+            background-size: 100% 100%; 
+            background-repeat: no-repeat;
+            position: relative;
+            height: 100vh;
+        }
+       
+        .card{
+            background-color: black;
+            border: 1px solid white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            height: 20rem;
+        }
+        .card img{
+            width: 70px; 
+            height: 70px; 
+            border-radius: 50%;
+            margin-right: 1rem; 
+            overflow: hidden;
+        }
+        .card i{
+            color: rgb(251, 244, 244);
+            font-size: 30px;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        .card h5,p{
+            font-style: italic ;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <!-- header -->
+
+    {% include 'navi/navibar.html' %}
+
+    
+    <div class="container" style="margin-top: 75px;">
+        <h1 style="text-align: center;color: white;"> "&nbsp; Our &nbsp; Clients' &nbsp; Thoughts &nbsp;"  </h1>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row d-flex algin-item-center justify-content-center">
+                <div class="col-md-3">
+                    <div class="card" style="background-color: black;">
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left" ></i>
+                        </div>
+                    <div class="card-body">
+                       <p class="card-text">
+                        "  A coffee lover's paradise! The aroma as soon as you walk in is simply intoxicating,
+                         and every cup is brewed to perfection.
+                         My mornings are incomplete without a visit !  "
+                       </p>
+                       <div class="d-flex algin-item-center pt-2">
+                            <img src="{% static 'images/menu.png' %}" alt="">
+                            <div>
+                                <h5 class="card-title fw-bold " > Sarah T </h5>
+                                <p> Regular Custmer</p>
+                            </div>
+                       </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="background-color: black;">
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left" style="color: rgb(251, 244, 244); font-size: 30px;"></i>
+                        </div>
+                    <div class="card-body">
+                       <p class="card-text">
+                        "  Fantastic coffee with a warm, welcoming vibe. 
+                        Whether you're grabbing a quick cup or staying to work, this place has it all. 
+                        Can't get enough of their cappuccinos  !  "                      
+                     </p>
+                       <div class="d-flex algin-item-center pt-2">
+                            <img src="{% static 'images/menu.png' %}" alt="" style="width: 70px; height: 70px; border-radius: 50%;margin-right: 1rem; overflow: hidden;">
+                            <div>
+                                <h5 class="card-title fw-bold"> Jessica J </h5>
+                                <p> Frequent Visitor </p> 
+                            </div>
+                       </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="background-color: black;">
+                        <div class="quote">
+                            <i class="fa-solid fa-quote-left" style="color: rgb(251, 244, 244); font-size: 30px;"></i>
+                        </div>
+                    <div class="card-body">
+                       <p class="card-text">
+                        "  I've tried a lot of coffee shops, but this one is special. 
+                        The attention to detail and passion for coffee make every visit an experience. 
+                        Highly recommended  !  "                       
+                    </p>
+                       <div class="d-flex algin-item-center pt-2">
+                            <img src="{% static 'images/menu.png' %}" alt="" style="width: 70px; height: 70px; border-radius: 50%;margin-right: 1rem; overflow: hidden;">
+                            <div>
+                                <h5 class="card-title fw-bold"> David K </h5>
+                                <p> Coffee Connoisseur </p> 
+                            </div>
+                       </div>
+
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row d-flex algin-item-center justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card" style="background-color: black;">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left" style="color: rgb(251, 244, 244); font-size: 30px;"></i>
+                            </div>
+                        <div class="card-body">
+                           <p class="card-text">
+                            "  The cozy atmosphere and friendly baristas make this the perfect spot to unwind. And the coffee? Absolutely top-notch. 
+                            It’s my favorite place to catch up with friends.  "
+
+                        </p>
+                           <div class="d-flex algin-item-center pt-2">
+                                <img src="{% static 'images/menu.png' %}" alt="" style="width: 70px; height: 70px; border-radius: 50%;margin-right: 1rem; overflow: hidden;">
+                                <div>
+                                    <h5 class="card-title fw-bold"> Mark D </h5>
+                                    <p> Frequent Visitor </p>  
+                                </div>
+                           </div>
+    
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="background-color: black;">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left" style="color: rgb(251, 244, 244); font-size: 30px;"></i>
+                            </div>
+                        <div class="card-body">
+                           <p class="card-text">
+                            "  From the rich espresso to the smooth lattes, this coffee shop is a gem in the city. 
+                            Every cup tells a story of passion and quality. 
+                            I can’t recommend it enough !  "
+                            </p>
+                           <div class="d-flex algin-item-center pt-2">
+                                <img src="{% static 'images/menu.png' %}" alt="" style="width: 70px; height: 70px; border-radius: 50%;margin-right: 1rem; overflow: hidden;">
+                                <div>
+                                    <h5 class="card-title fw-bold"> Emily R </h5>
+                                    <p> Coffee Enthusiast</p> 
+                                </div>
+                           </div>
+    
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="background-color: black;">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left" style="color: rgb(251, 244, 244); font-size: 30px;"></i>
+                            </div>
+                        <div class="card-body">
+                           <p class="card-text">
+                            "  The best coffee I've ever had  ! The baristas know their craft, 
+                            and the pastries are to die for. 
+                            My go-to spot for a morning pick-me-up.My favorite place to unwind. "
+
+                            </p>
+                           <div class="d-flex algin-item-center pt-2">
+                                <img src="{% static 'images/menu.png' %}" alt="" style="width: 70px; height: 70px; border-radius: 50%;margin-right: 1rem; overflow: hidden;">
+                                <div>
+                                    <h5 class="card-title fw-bold"> Alex A </h5>
+                                    <p> Freelance Write </p>  
+                                </div>
+                           </div>
+    
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="margin-left: -60px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div><br><br>
+      
+
+    <!-- footer -->
+
+    {% include 'navi/footer.html' %}
+
+
+
+<script>
+    document.getElementById("my_form").addEventListener('submit', function(event){
+        event.preventDefault();
+        document.getElementById("successMessage").style.display = 'block';
+    });
+</script>
+    
+
+</body>
+</html>
